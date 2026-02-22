@@ -5,11 +5,15 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "app",
+    "scheme": "phonelock",
     "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
+
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.az.akkt.phonelock",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Used to see where you're hiding your phone."
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -41,8 +45,7 @@
       ]
     ],
     "experiments": {
-      "typedRoutes": true,
-      "reactCompiler": true
+      "typedRoutes": true
     }
   }
 }
